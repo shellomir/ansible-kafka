@@ -1,0 +1,23 @@
+- name: Kafka | Preflight Tasks
+  ansible.builtin.include_tasks: preflight.yml
+  tags:
+    - kafka_preflight
+    - kafka_preflight_java
+    - kafka_preflight_packages
+
+- name: Kafka | Install Tasks
+  ansible.builtin.include_tasks: install.yml
+  tags: kafka_install
+
+- name: Kafka | Configuration Tasks
+  ansible.builtin.include_tasks: configure.yml
+  tags:
+    - kafka_configure
+    - kafka_configure_kraft
+    - kafka_configure_storage
+    - kafka_configure_systemd
+
+- name: Kafka | Check Cluster Health
+  ansible.builtin.include_tasks: check.yml
+  tags:
+    - kafka_check

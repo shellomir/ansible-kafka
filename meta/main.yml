@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: Alexander Sigachev
+  description: An ansible role to install/configure Kafka in KRaft mode
+  role_name: kafka
+  namespace: shellomir
+
+  license: MIT
+
+  min_ansible_version: 2.18.0
+  platforms:
+    - name: EL
+      versions:
+        - "9"
+  galaxy_tags:
+    - kafka
+    - kraft
+dependencies: []
