@@ -31,13 +31,13 @@ kafka_cluster:
           ansible_host: 172.31.32.35
     kafka_kraft_controllers:
       hosts:
-        kafka-sockshop-a-1-zookeeper:
+        kafka-sockshop-a-1-controller:
           kafka_node_id: 4
           ansible_host: 172.31.0.37
-        kafka-sockshop-b-1-zookeeper:
+        kafka-sockshop-b-1-controller:
           kafka_node_id: 5
           ansible_host: 172.31.16.27
-        kafka-sockshop-c-1-zookeeper:
+        kafka-sockshop-c-1-controller:
           kafka_node_id: 6
           ansible_host: 172.31.32.36
 ```
